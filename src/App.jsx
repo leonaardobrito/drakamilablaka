@@ -46,13 +46,40 @@ function App() {
               </div>
             </Html>
           </mesh>
-          <mesh position={[0, 0, 0]} scale={100} >
+
+
+
+          <mesh position={[980, 150, 10]} scale={100} >
             <Html
 
               wrapperClass="label"
               center
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.👍
+            </Html>
+          </mesh>
+
+          <mesh position={[-20, 30, 100]} scale={100} >
+            <Html
+
+              wrapperClass="label"
+              center
+            >
+              <p>
+
+              Lorem Ips standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.👍
+              </p>
+            </Html>
+          </mesh>
+
+
+          <mesh position={[-970, 190, -100]} scale={100} >
+            <Html
+
+              wrapperClass="label"
+              center
+            >
+              dsdsdsLorem Ips standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.👍
             </Html>
           </mesh>
         </Canvas>

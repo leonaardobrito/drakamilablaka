@@ -12,18 +12,27 @@ canvas {
 }
 
 .label {
+  display: flex;
   font-family: 'Montserrat';
+  font-size: 22px;
   font-weight: 400;
-  position: absolute;
+  /* position: absolute; */
+  width: 200px;
   background: #d6ceceb2;
-  padding: 200px;
-
+  padding: 300px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  /* width: 00px; */
+  /* transform: translate3d(40vw,40vh,0px)!important; */
   overflow: hidden;
   border-radius: 20px;
   user-select: none;
   color: black;
 }
-
+/* 
+.label p {
+  margin: 0;
+} */
 .logo
 {
   display: block!important;
@@ -39,6 +48,45 @@ canvas {
   padding-left: 70px;
   padding-right: 70px;
   transform: translate3d(0px,0px,0px)!important;
+  overflow: hidden;
+  border-radius: 20px;
+  user-select: none;
+  color: black;
+}
+
+.hero-1 {
+  font-family: 'Montserrat';
+  display: flex;
+  font-size: 70px;
+  width: 100vw;
+  right: 50px;
+  font-weight: 400;
+  /* position: absolute; */
+  background: #d6ceceb2;
+  /* padding: 80px; */
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  /* width: 00px; */
+  /* transform: translate3d(40vw,40vh,0px)!important; */
+  /* overflow: hidden; */
+  /* border-radius: 20px; */
+  user-select: none;
+  color: black;
+}
+
+
+.hero-2 {
+  font-family: 'Montserrat';
+  display: block;
+  
+  font-weight: 400;
+  /* position: absolute; */
+  /* background: #d6ceceb2; */
+  padding: 80px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  /* width: 00px; */
+  /* transform: translate3d(40vw,40vh,0px)!important; */
   overflow: hidden;
   border-radius: 20px;
   user-select: none;
