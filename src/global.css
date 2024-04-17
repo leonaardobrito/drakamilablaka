@@ -1,0 +1,20 @@
+/* global.css */
+
+/* Reset margins and paddings for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Optionally, set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Optionally, set font properties */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
