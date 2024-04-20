@@ -35,23 +35,25 @@ canvas {
 } */
 .logo
 {
-  display: block!important;
-  font-family: 'Montserrat';
-  font-weight: 400;
+  /* display: block!important; */
+  /* font-family: 'Montserrat';
+  font-weight: 400; */
   top: 10px!important;
   left: 10px!important;
-  position: fixed;
+  /* position: fixed; */
   background: #d6ceceb2;
+  height: 85px;
+  padding-top: 0;
   /* padding: 50px; */
-  padding-bottom: 40px;
+  /* padding-bottom: 40px;
   padding-top: 45px;
   padding-left: 70px;
-  padding-right: 70px;
-  transform: translate3d(0px,0px,0px)!important;
-  overflow: hidden;
+  padding-right: 70px; */
+  /* transform: translate3d(0px,0px,0px)!important; */
+  /* overflow: hidden; */
   border-radius: 20px;
-  user-select: none;
-  color: black;
+  /* user-select: none; */
+  /* color: black; */
 }
 
 .hero-1 {

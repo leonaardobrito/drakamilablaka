@@ -10,33 +10,34 @@ Title: FREE - SkyBox Autumn Forest
 import React, { useRef, useEffect, useLayoutEffect } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { useGLTF, useScroll, OrbitControls, Html } from '@react-three/drei'
+import { useControls } from 'leva'
 
 export default function Scene(props) {
-  const scroll = useScroll()
   const { nodes, materials, scene } = useGLTF('/scene.gltf')
+  const scroll = useScroll()
   const { camera } = useThree();
   const controlsRef = useRef();
-
-  // if (window.innerWidth > 768) {
-  //   useFrame((state, delta) => {
-  //     // The offset is between 0 and 1, you can apply it to your models any way you like
-  //     const offset = scroll.offset;
-  //     // Calculate the position of the camera
-  //     const x = Math.sin(offset * Math.PI * 2) * -10;
-  //     const z = Math.cos(offset * Math.PI * 2) * -10;
-  //     // Set the camera's position
-  //     console.log("camera: ", x)
-  //     camera.position.set(-x, camera.position.y, z);
-  //     state.camera.lookAt(0, 0, 0);
-  //   });
-  // } else {
-  //   // Code to run only on mobile
-  //   // ...
-  // }
+  
+  if (window.innerWidth > 768) {
+    useFrame((state, delta) => {
+      // The offset is between 0 and 1, you can apply it to your models any way you like
+      const offset = scroll.offset;
+      // Calculate the position of the camera
+      const x = Math.sin(offset * Math.PI * 2) * -10;
+      const z = Math.cos(offset * Math.PI * 2) * -10;
+      // Set the camera's position
+      console.log("camera: ", x)
+      camera.position.set(-x, camera.position.y, z);
+      state.camera.lookAt(0, 0, 0);
+    });
+  } else {
+    // Code to run only on mobile
+    // ...
+  }
 
   return (
     // <group>
-    <group  {...props} dispose={null} scale={[0.01, 0.01, 0.01]}>
+    <group ref={controlsRef} {...props} dispose={null} scale={[0.01, 0.01, 0.01]}>
       <mesh geometry={nodes.Sphere__0.geometry} material={materials['Scene_-_Root']} rotation={[-Math.PI / 2, 0, 0]} scale={50000} />
 
     </group>
