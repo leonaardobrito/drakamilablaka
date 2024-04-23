@@ -84,7 +84,7 @@ canvas {
 .hero-2 {
   font-family: 'Montserrat';
   display: block;
-  
+
   font-weight: 400;
   /* position: absolute; */
   /* background: #d6ceceb2; */
@@ -98,45 +98,69 @@ canvas {
   user-select: none;
   color: black;
 }
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0rem;
+
+.formulario
+{
+
+  position: fixed;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 30px 50px;
+  box-sizing: border-box;
+  width: 40%;
+  margin: 0 10%;
+  z-index: 1000;
+  scale: 0;/* Initially hide the form */
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  opacity: 70%;
+  background-color: #f9f9f9;
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.formulario label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #555;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.formulario textarea {
+  height: 100px;
 }
 
-.card {
-  padding: 2em;
+.formulario button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b32a00;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
-} */
+.formulario button[type="submit"]:hover {
+  background-color: #811d02;
+}
