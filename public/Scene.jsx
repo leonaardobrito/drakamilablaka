@@ -18,22 +18,22 @@ export default function Scene(props) {
   const { camera } = useThree();
   const controlsRef = useRef();
   
-  if (window.innerWidth > 768) {
-    useFrame((state, delta) => {
-      // The offset is between 0 and 1, you can apply it to your models any way you like
-      const offset = scroll.offset;
-      // Calculate the position of the camera
-      const x = Math.sin(offset * Math.PI * 2) * -10;
-      const z = Math.cos(offset * Math.PI * 2) * -10;
-      // Set the camera's position
-      console.log("camera: ", x)
-      camera.position.set(-x, camera.position.y, z);
-      state.camera.lookAt(0, 0, 0);
-    });
-  } else {
-    // Code to run only on mobile
-    // ...
-  }
+  // if (window.innerWidth > 968) {
+  //   useFrame((state, delta) => {
+  //     // The offset is between 0 and 1, you can apply it to your models any way you like
+  //     const offset = scroll.offset;
+  //     // Calculate the position of the camera
+  //     const x = Math.sin(offset * Math.PI * 2) * -10;
+  //     const z = Math.cos(offset * Math.PI * 2) * -10;
+  //     // Set the camera's position
+  //     console.log("camera: ", x)
+  //     camera.position.set(-x, camera.position.y, z);
+  //     state.camera.lookAt(0, 0, 0);
+  //   });
+  // } else {
+  //   // Code to run only on mobile
+  //   // ...
+  // }
 
   return (
     // <group>
