@@ -1,4 +1,4 @@
-import {OrbitControls, Text, useScroll } from "@react-three/drei";
+import {OrbitControls, Text, useScroll, Html } from "@react-three/drei";
 import { useFrame, useThree } from '@react-three/fiber';
 import React, {useEffect, useRef} from "react";
 import { SheetProvider, PerspectiveCamera, useCurrentSheet } from "@theatre/r3f";
@@ -225,7 +225,7 @@ export const Experience = () => {
             {/* ABOUT */}
             <group ref={aboutRef} scale={0}>
                 <CustomMeshWithText
-                    meshPosition={[80, -2, 5]}
+                    meshPosition={[80, -2, -15]}
                     meshRotation={[0, 4.62, 0]}
                     boxDimensions={[82, 74, 0.15]}
                     textPosition={[0.8, -1.2, 2]}
@@ -257,8 +257,12 @@ ajudarei a buscar a melhor rede de apoio para trazer reforços a esse propósito
 Olhar cada um além dos exames, olhar o todo, pois cada elemento social e formativo 
 influencia no processo de adoecimento e melhora. `}
                 />
+
+                
+          
             </group>
-            <Bloom intensity={1} luminanceThreshold={0.9} luminanceSmoothing={0.9}/>
+
+          
         </>
 
     )

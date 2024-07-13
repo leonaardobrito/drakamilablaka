@@ -1,7 +1,7 @@
 import React, {Suspense} from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-
+import './index.css'
 // Theatre
 // import studio from '@theatre/studio'
 // import r3fExtension from "@theatre/r3f/dist/extension";

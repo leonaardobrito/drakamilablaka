@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 
 const ContactForm = () => {
-
     const nameRef = useRef();
     const phoneRef = useRef();
     const emailRef = useRef();
@@ -21,21 +20,35 @@ const ContactForm = () => {
     };
 
     return (
-        <div className={'formulario'}>
+        <div className="formulario">
             <h2>Entre em contato</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Nome:</label>
-                    <input title="Campo obrigatório." type="text" id="name" ref={nameRef} required />
+                    <input title="Campo obrigatório." type="text" id="name" ref={nameRef} required style={{
+                            backgroundColor: 'white',
+                            color: 'black'
+                        }}/>
                 </div>
-
                 <div>
                     <label htmlFor="email">E-mail:</label>
-                    <input type="email" id="email" ref={emailRef} required title="Campo obrigatório."/>
+                    <input type="email" id="email" ref={emailRef} required title="Campo obrigatório." style={{
+                            backgroundColor: 'white',
+                            color: 'black'
+                        }}/>
                 </div>
                 <div>
                     <label htmlFor="message">Mensagem:</label>
-                    <textarea id="message" ref={messageRef} required title="Campo obrigatório."/>
+                    <textarea 
+                        id="message" 
+                        ref={messageRef} 
+                        required 
+                        title="Campo obrigatório." 
+                        style={{
+                            backgroundColor: 'white',
+                            color: 'black'
+                        }}
+                    />
                 </div>
                 <button type="submit">Enviar</button>
             </form>
