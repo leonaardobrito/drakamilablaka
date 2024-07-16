@@ -55,4 +55,5 @@ export default function Autumn(props) {
   )
 }
 
-useGLTF.preload('/drakamilablaka/public/models/autumn_forest.glb')
+// useGLTF.preload('/drakamilablaka/public/models/autumn_forest.glb')
+useGLTF.preload('/models/autumn_forest.glb')
