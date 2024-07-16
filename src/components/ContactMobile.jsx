@@ -46,7 +46,7 @@ const ContactMobile = () => {
     };
 
     return (
-        <section id='contato' ref={contactRef} className='contact-box scale-1 flex flex-col text-amber-900 font-montserrat-bold items-center justify-center z-50 h-auto max-w-4xl mx-auto p-8 bg-amber-100 bg-opacity-35 rounded-2xl shadow-lg shadow-amber-950 mb-44 mt-48 mr-3.5 ml-3.5'>
+        <section id='contato' ref={contactRef} className='contact-box scale-1 flex flex-col text-amber-900 font-montserrat-bold items-center justify-center z-50 h-auto max-w-4xl mx-auto p-8 bg-amber-100 bg-opacity-60 rounded-2xl shadow-lg shadow-amber-950 mb-44 mt-48 mr-3.5 ml-3.5'>
             <h1 className='text-3xl mb-4 font-morgenlicht'>Contato</h1>
             <form className='contact-box' onSubmit={handleSubmit}>
                 <div className='mb-6'>

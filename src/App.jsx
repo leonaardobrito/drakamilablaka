@@ -30,7 +30,7 @@ function App() {
     }, []);
 
     const handleWhatsAppClick = () => {
-        const phoneNumber = "+5547991054009";
+        const phoneNumber = "+5548996192691";
         // Open WhatsApp chat with the specified phone number
         window.open(`https://wa.me/${phoneNumber}`, "_blank");
     };
