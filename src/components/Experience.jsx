@@ -4,7 +4,7 @@ import React, {useEffect, useRef} from "react";
 import { SheetProvider, PerspectiveCamera, useCurrentSheet } from "@theatre/r3f";
 import { val } from "@theatre/core";
 import { Bloom } from '@react-three/postprocessing'
-import Autumn from "./Autumn";
+import Autumn from "./Autumn.jsx";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 

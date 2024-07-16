@@ -48,13 +48,13 @@ const CustomMeshWithText = ({
           {complement}
           <meshBasicMaterial color="brown" />
         </Text>
-        <Html position={[0, 0, 0]} transform>
+        {/* <Html position={[0, 0, 0]} transform>
           <img
             src="/img.png" // Use the correct path to your image
             alt="Descrição da Imagem"
             style={{ width: '100%', height: 'auto', position: 'absolute', top: '10px', right: '10px' }} // Adjust the style as needed
           />
-        </Html>
+        </Html> */}
       </RoundedBox>
     </mesh>
   );

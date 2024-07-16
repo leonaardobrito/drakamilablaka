@@ -1,5 +1,6 @@
 import { AiOutlineMenu } from "react-icons/ai";
 import { useEffect, useRef, useState } from "react";
+import logoK from '../assets/logoK.svg'
 
 const NavbarMobile = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ const NavbarMobile = () => {
     return (
         <nav className="h-[90px] md:fixed flex w-full items-center px-6">
             <img
-                src='/logoK.png'
+                src={logoK} 
                 alt='Logo'
                 className="z-50 h-[70px] md:mt-8 md:h-[100px] w-auto bg-white bg-opacity-30 pl-2 pr-2 fixed left-5 border rounded-2xl border-none"
             />

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Experience } from "./components/Experience";
+import { Experience } from "./components/Experience.jsx";
 import './App.css';
 import { getProject } from "@theatre/core";
 import { SheetProvider } from "@theatre/r3f";
@@ -9,6 +9,7 @@ import FlyState from './FlyRefactored.json';
 import ContactForm from "./components/ContactForm.jsx";
 import ExperienceMobile from "./components/ExperienceMobile.jsx";
 import { FaWhatsapp } from "react-icons/fa";
+import logoK from './assets/logoK.svg'
 
 function App() {
     const [isMobile, setIsMobile] = useState(false);
@@ -42,7 +43,7 @@ function App() {
             {!isMobile ? (
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
                     <div className="logo" style={{ position: 'fixed', top: '10px', left: '10px', zIndex: '10' }}>
-                        <img src="/logoK.png" alt="Logo" style={{ width: '90px', height: 'auto' }} />
+                        <img src={logoK}  alt="Logo" style={{ width: '90px', height: 'auto' }} />
                     </div>
                     <div
                         style={{

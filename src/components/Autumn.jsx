@@ -13,7 +13,7 @@ import { useRef, useEffect, Suspense } from "react";
 
 
 export default function Autumn(props) {
-  const { nodes, materials } = useGLTF('/models/autumn_forest.glb')
+  const { nodes, materials } = useGLTF('./models/autumn_forest.glb')
   //
   // const { camera } = useThree()
   //
@@ -55,4 +55,4 @@ export default function Autumn(props) {
   )
 }
 
-useGLTF.preload('/models/autumn_forest.glb')
+useGLTF.preload('/drakamilablaka/public/models/autumn_forest.glb')

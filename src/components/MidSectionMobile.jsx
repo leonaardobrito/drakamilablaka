@@ -1,16 +1,18 @@
+import imgHero from '../assets/img2.png'
+
 const MidSectionMobile = () => {
     return (
         <section id="inicio" className="flex items-start justify-center h-screen ">
             <div className="text-start ml-7 mt-20 md:mt-24">
                 <div 
-                    className="text-2xl text-amber-950 z-50 font-montserrat-500"
+                    className="text-2xl text-green-950 z-50 font-montserrat-500"
                     style={{ textShadow: '1px 2px 5px rgba(255,255,255, 0.7)' }}
                 >
                     Olhar a floresta além da árvore
                 </div>
                 <div 
-                    className="text-[3.1rem] md:text-7xl text-amber-700 font-morgenlicht z-50 mb-8"
-                    style={{ textShadow: '5px 2px 15px rgba(0, 0, 0, 0.6)' }}
+                    className="text-[3.1rem] md:text-7xl text-green-800 font-morgenlicht z-50 mb-8"
+                    style={{ textShadow: '5px 2px 15px rgba(255,255,255, 0.6)' }}
                 >
                     ver você além <br />
                     dos seus exames
@@ -21,7 +23,7 @@ const MidSectionMobile = () => {
                         style={{ width: '100%', height: '100%', left: '0%', top: '0%' }}
                     ></div>
                     <img 
-                        src="/img2.png" 
+                        src={imgHero}
                         alt="Imagem" 
                         className="relative z-10 w-56 h-56 md:w-90 md:h-90 rounded-full" 
                     />
