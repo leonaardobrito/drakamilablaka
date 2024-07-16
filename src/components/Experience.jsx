@@ -118,7 +118,7 @@ export const Experience = () => {
         const sequenceLength = val(sheet.sequence.pointer.length)
         // const scrollPosition = scrollRef.current
 
-        console.log("scroll:", sequenceLength, "cruent:  ", sheet.sequence.position)
+        // console.log("scroll:", sequenceLength, "cruent:  ", sheet.sequence.position)
 
         // if (scrollPosition >= sequenceLength -1) {
         //     sheet.sequence.position = 0;
