@@ -100,7 +100,7 @@ export const Experience = () => {
 
         const formulario = document.getElementsByClassName("formulario");
         if (camera.position.x <= -4 && camera.position.x >= -16 && camera.position.z >= -13 && camera.position.z <= -11) {
-            console.log("Call form here");
+            // console.log("Call form here");
             if (formulario) {
                 gsap.to(formulario, {
                     scale: 1,
