@@ -8,7 +8,7 @@ import { ScrollControls } from "@react-three/drei";
 import FlyState from './FlyRefactored.json';
 import ContactForm from "./components/ContactForm.jsx";
 import ExperienceMobile from "./components/ExperienceMobile.jsx";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import logoK from './assets/logoK.svg'
 
 function App() {
@@ -28,7 +28,9 @@ function App() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
+    const handleInstagramClick = () => {
+        window.open('https://instagram.com/dra.kamilablaka', '_blank');
+    };
     const handleWhatsAppClick = () => {
         const phoneNumber = "+5548996192691";
         // Open WhatsApp chat with the specified phone number
@@ -43,7 +45,7 @@ function App() {
             {!isMobile ? (
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
                     <div className="logo" style={{ position: 'fixed', top: '10px', left: '10px', zIndex: '10' }}>
-                        <img src={logoK}  alt="Logo" style={{ width: '90px', height: 'auto' }} />
+                        <img src={logoK} alt="Logo" style={{ width: '90px', height: 'auto' }} />
                     </div>
                     <div
                         style={{
@@ -54,12 +56,29 @@ function App() {
                             color: "white"
                         }}
                     >
-                                    <button
-                onClick={handleWhatsAppClick}
-                className="rounded-full h-14 w-14 bg-green-600 border-none cursor-pointer flex items-center justify-center"
-            >
-                <FaWhatsapp className="text-white scale-150"/>
-            </button>
+                        <button
+                            onClick={handleWhatsAppClick}
+                            className="rounded-full h-14 w-14 bg-green-600 border-none cursor-pointer flex items-center justify-center"
+                        >
+                            <FaWhatsapp className="text-white scale-150" />
+
+                        </button>
+                    </div>
+                    <div
+                        style={{
+                            position: "fixed",
+                            bottom: "95px",
+                            right: "25px",
+                            zIndex: "1000",
+                            color: "white"
+                        }}
+                    >
+                        <button
+                            onClick={handleInstagramClick}
+                            className="rounded-full h-14 w-14 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 border-none cursor-pointer flex items-center justify-center"
+                        >
+                            <FaInstagram className="text-white scale-150" />
+                        </button>
                     </div>
                     <ContactForm />
                     <Canvas gl={{ preserveDrawingBuffer: true }} style={{ width: '100vw', height: '100vh' }}>
