@@ -1,7 +1,5 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const ContactMobile = () => {
     const contactRef = useRef(null);
@@ -22,6 +20,10 @@ const ContactMobile = () => {
         const serviceId = 'service_olss207';
         const templateId = 'template_y2px66w';
         const publicKey = 'ZG1E5xa9tKUmzjDmR';
+        //k
+        // const serviceId = 'service_bxf396b';
+        // const templateId = 'template_7wfk3tk';
+        // const publicKey = 'SDcgJoayxpoBlkU-T';
 
         const templateParams = {
             from_name: formData.name,
@@ -34,27 +36,17 @@ const ContactMobile = () => {
             .then((response) => {
                 console.log('email sent: ', response);
                 setFormData({ name: '', email: '', message: '' });
-
-                // Exibe o toast de sucesso
-                toast.success('Mensagem enviada com sucesso!', {
-                    position: toast.POSITION.TOP_CENTER,
-                    autoClose: 3000, // 3 segundos
-                });
+                alert('Mensagem enviada com sucesso!');
             })
             .catch((error) => {
                 console.log('email error: ', error);
-
-                // Exibe o toast de erro
-                toast.error('Erro ao enviar a mensagem. Tente novamente.', {
-                    position: toast.POSITION.TOP_CENTER,
-                    autoClose: 3000, // 3 segundos
-                });
+                alert('Erro ao enviar a mensagem. Tente novamente.');
             });
     };
 
     return (
         <section id='contato' ref={contactRef} className='contact-box scale-1 flex flex-col text-amber-900 font-montserrat-bold items-center justify-center z-50 h-auto max-w-4xl mx-auto p-8 bg-amber-100 bg-opacity-60 rounded-2xl shadow-lg shadow-amber-950 mb-44 mt-48 mr-3.5 ml-3.5'>
-            
+
             <h1 className='text-3xl mb-4 font-morgenlicht'>Contato</h1>
             <form className='contact-box' onSubmit={handleSubmit}>
                 <div className='mb-6'>
@@ -82,9 +74,6 @@ const ContactMobile = () => {
                     </button>
                 </div>
             </form>
-
-            {/* Contêiner para os toasts */}
-            <ToastContainer />
         </section>
     );
 };

@@ -6,9 +6,4 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   assetsInclude: ['**/*.ttf', '**/*.otf', '**/*.woff2'],
-  build: {
-    rollupOptions: {
-      external: ['react-toastify']
-    }
-  }
 })
