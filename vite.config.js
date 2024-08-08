@@ -8,7 +8,7 @@ export default defineConfig({
   assetsInclude: ['**/*.ttf', '**/*.otf', '**/*.woff2'],
   build: {
     rollupOptions: {
-      external: ['react-toastify']
+      external: ['react-toastify/dist/ReactToastify.css']
     }
   }
 })
