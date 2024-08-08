@@ -6,9 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 const ContactForm = () => {
     const formRef = useRef();
 
-    const serviceId = 'service_olss207';
-    const templateId = 'template_y2px66w';
-    const publicKey = 'ZG1E5xa9tKUmzjDmR';
+    const serviceId = 'service_bxf396b';
+    // const templateId = 'template_y2px66w';
+    const templateId = 'template_7wfk3tk';
+    // const publicKey = 'ZG1E5xa9tKUmzjDmR';
+    const publicKey = 'SDcgJoayxpoBlkU-T';
 
     const handleSubmit = (event) => {
         event.preventDefault();
