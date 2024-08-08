@@ -22,10 +22,14 @@ const ContactMobile = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        // const serviceId = 'service_olss207';
+        // const templateId = 'template_y2px66w';
+        // const publicKey = 'ZG1E5xa9tKUmzjDmR';
 
-        const serviceId = 'service_olss207';
-        const templateId = 'template_y2px66w';
-        const publicKey = 'ZG1E5xa9tKUmzjDmR';
+        const serviceId = 'service_bxf396b';
+        const templateId = 'template_7wfk3tk';
+        const publicKey = 'SDcgJoayxpoBlkU-T';
 
         const templateParams = {
             from_name: formData.name,
